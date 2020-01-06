@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block head %}
+    {{ super() }}
+    <style>
+    .card-deck {
+    margin:10px;
+}
+    h2{
+        text-align: center;
+        margin:30px;
+    }
+a {
+    text-decoration: none;
+    color:black;
+    }
+.card-img-top {
+    height:20vw;
+}
+    </style>
+{% endblock %}
+
+
+{% block contents %}
+    <h2>My Projects</h2>
+    <div class="card-deck">
+        <div class="card">
+            <a href="https://github.com/" alt="project1"><img class="card-img-top" src="/static/img/whacAMolePic.jpg" alt="Card image cap"></a>
+                <div class="card-body">
+                <a href="https://github.com/" alt="project1"><h5 class="card-title">Whac-A-Mole Game</h5></a>
+                <div class="card-text">
+                    <ul>
+                        <li>Programmed a 1 player java game using GUI, multi-thread and event listener in JAVA</li>
+                        <li>Featured animation of moles lighting up and disappearing when the user whack them</li>
+                        <li>Included points counter and sounds when the user smacks a mole</li>
+                    </ul>
+                </div>
+                </div>
+                <div class="card-footer">
+                <small class="text-muted">September 15, 2019</small>
+                </div>
+        </div>
+
+        <div class="card">
+            <a href="https://github.com/" alt="project2"><img class="card-img-top" src="/static/img/websitePic.jpg" alt="Card image cap"></a>
+                <div class="card-body">
+                <a href="https://github.com/" alt="project2"><h5 class="card-title">Personal Website</h5></a>
+                <div class="card-text">
+                    <ul>
+                        <li>Developed a personal website which displays self-introduction, personal experience and projects</li>
+                        <li>Applied Post/Redirect/Get design pattern</li>
+                        <li>Designed the general templates using Bootstrap and Html, built Server side using Flask, Python, worked on database using SQLite, added some style using CSS and JavaScript</li>
+                        <li>Handled forms using Flask-WTF, handled user sessions using Flask-Login and handled protected and unprotected pages using User Management</li>
+                    </ul>
+                </div>
+                </div>
+                <div class="card-footer">
+                <small class="text-muted">October 28, 2019</small>
+                </div>
+        </div>
+
+        <div class="card">
+            <a href="http://www.hangmai.com/cn/news/xingyedongtai/2016/1226/243.html" alt="project3"><img class="card-img-top" src="/static/img/macaroonPic.jpg" alt="Card image cap"></a>
+                <div class="card-body">
+                <a href="http://www.hangmai.com/cn/news/xingyedongtai/2016/1226/243.html" alt="project3"><h5 class="card-title">Konjac Macaroon</h5></a>
+                <div class="card-text">
+                    <ul>
+                        <li>Worked as a leader and developed a new food product with 4 team members</li>
+                        <li>Derived a compound color protecting agent to lower the Konjac oxidation activity</li>
+                        <li>Developed a technique to apply the red pigment to Konjac food and prevent Konjac browning</li>
+                        <li>Accomplished an Undergraduate Science & Technology Innovation Program and applied China Invention Patent</li>
+                    </ul>
+                </div>
+                </div>
+                <div class="card-footer">
+                <small class="text-muted">May 1, 2016</small>
+                </div>
+        </div>
+    </div>
+{% endblock %}

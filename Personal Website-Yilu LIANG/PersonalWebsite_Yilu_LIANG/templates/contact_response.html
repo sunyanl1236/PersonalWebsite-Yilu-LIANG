@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}{{ super() }} - Contact Response{% endblock %}
+
+{% block contents %}
+    <div class="container">
+        <h1>Thank you <em>{{ name }}</em> for your message!</h1>
+        <h2>I will contact you shortly.</h2>
+
+{#    <table class="table">#}
+{#    <thead class="thead-dark">Contact Data#}
+{#    <tr>#}
+{#        {% for key in form %}#}
+{#            <td>{{ key }}</td>#}
+{#        {% endfor %}#}
+{#    </tr>#}
+{#    </thead>#}
+{#    <tbody>#}
+{#     <tr>#}
+{#        {% for key in form %}#}
+{#            <td>{{ form[key] }}</td>#}
+{#        {% endfor %}#}
+{#    </tr>#}
+{#    </tbody>#}
+{#    </table>#}
+
+    </div>
+
+{% endblock %} <!-- content -->

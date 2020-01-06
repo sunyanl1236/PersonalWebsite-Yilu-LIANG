@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+ {% block head %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="/static/css/aboutcss.css">
+    <style>
+     h2{
+        text-align: center;
+        margin:30px;
+    }
+
+     h2.tech {
+         margin-top:50px;
+     }
+     {#<!-- how to center an class -->#}
+    .progress_bar{
+     width:70%;
+    margin-left:30%;
+    }
+
+    img.profile {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+
+
+      .caret::after {
+   content: "";
+   display: inline-block;
+   width: 2px;
+   height: 1em;
+   margin-bottom: -2px;
+   margin-left: -2px;
+   background-color: #333;
+   animation: blink-caret .5s step-end infinite;
+}
+@keyframes  blink-caret { 50% {opacity: 0;} }
+    </style>
+
+{% endblock %}
+
+{% block contents %}
+    <div class="about">
+        <!-- About Section -->
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        <section class="page-section mb-0" id="about">
+        <div class="container">
+        <!-- About Section Heading -->
+        <h2 class="page-section-heading text-center text-uppercase">About Me</h2>
+
+        <!-- About Section Content -->
+            <div class="row">
+                <div class="col-lg-4 ml-auto">
+                    <div class="typing">
+                        <span class="typing-text">Hi, my name is Yilu LIANG. I am a computer science student of Concordia University.
+                        I am a girl with passion, diligence and patient. I am also a quick learner with curiosity and creativity.
+                        I can learn programming knowledge by myself via the Internet and I love solving challenging problems.
+                        Besides, I am a good team player.</span>
+                        <i class="caret"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 mr-auto">
+                    <img src="/static/img/profile.jpg" alt="profile" class="profile">
+                </div>
+            </div>
+        </div>
+        </section>
+    </div>
+
+        <!--progress bar-->
+    <h2 class="tech">Technical skills</h2>
+        <div class="progress_bar">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="progress-title">HTML5</h3>
+                    <div class="progress pink">
+                        <div class="progress-bar" style="width:90%; background:#d01d4c;">
+                            <div class="progress-value">90%</div>
+                        </div>
+                    </div>
+
+                    <h3 class="progress-title">JAVASCRIPT</h3>
+                    <div class="progress green">
+                        <div class="progress-bar" style="width:75%; background:#248075;">
+                            <div class="progress-value">75%</div>
+                        </div>
+                    </div>
+
+                    <h3 class="progress-title">JAVA</h3>
+                    <div class="progress pink">
+                        <div class="progress-bar" style="width:90%; background:#d01d4c;">
+                            <div class="progress-value">90%</div>
+                        </div>
+                    </div>
+
+                    <h3 class="progress-title">PYTHON</h3>
+                    <div class="progress green">
+                        <div class="progress-bar" style="width:70%; background:#248075;">
+                            <div class="progress-value">70%</div>
+                        </div>
+                    </div>
+
+                    <h3 class="progress-title">C++/C</h3>
+                    <div class="progress pink">
+                        <div class="progress-bar" style="width:60%; background:#d01d4c;">
+                            <div class="progress-value">60%</div>
+                        </div>
+                    </div>
+
+                    <h3 class="progress-title">JAVASCRIPT</h3>
+                    <div class="progress green">
+                        <div class="progress-bar" style="width:75%; background:#248075;">
+                            <div class="progress-value">75%</div>
+                        </div>
+                    </div>
+
+                    <h3 class="progress-title">Lisp/Ruby/Prolog/AspectJ</h3>
+                    <div class="progress pink">
+                        <div class="progress-bar" style="width:55%; background:#d01d4c;">
+                            <div class="progress-value">55%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--end progress bar-->
+    <script src="/static/js/typing.js" type="text/javascript"></script>
+{% endblock %}

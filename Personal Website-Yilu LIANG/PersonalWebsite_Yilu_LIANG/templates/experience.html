@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="/static/css/experiencecss.css">
+    <style>
+        h2{
+        text-align: center;
+        margin:30px;
+    }
+    </style>
+{% endblock %}
+
+{% block contents %}
+<h2>My Experience</h2>
+<div style="height:80px;"></div>
+<div class="container">
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="main-timeline">
+								<div class="timeline">
+					<a href="#" class="timeline-content">
+						<span class="timeline-year">2019</span>
+						<div class="timeline-icon">
+							<i class="fa fa-rocket"></i>
+						</div>
+						<div class="content">
+							<h6 class="title">IEEEXtreme Programming Competition</h6>
+							<p class="description">
+								I solved more than 15 algorithm problems (about 30 problems in total difficulty from easy to tough)
+                                with 2 other team members using Java in 24 hours. Our team ranked 7.7% (315/4103) globally.
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="timeline">
+					<a href="#" class="timeline-content">
+						<span class="timeline-year">2018</span>
+						<div class="timeline-icon">
+							<i class="fa fa-users"></i>
+						</div>
+						<div class="content">
+							<h3 class="title">Marketing Internship</h3>
+							<p class="description">
+								I had an internship in Boston Scientific Co., Ltd from September 2017 to March 2018. My job included systematizing marketing event data and
+                                following up academic meetings.
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="timeline">
+					<a href="#" class="timeline-content">
+						<span class="timeline-year">2017</span>
+						<div class="timeline-icon">
+							<i class="fa fa-users"></i>
+						</div>
+						<div class="content">
+							<h3 class="title">Strategic Procurement Internship</h3>
+							<p class="description">
+								I had an internship in Shanghai PEER Bearing Co., Ltd during the summer. My job included developing and analyzing suppliers and analyzing purchasing order.
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Protected data{% endblock %}
+
+{% block contents %}
+    <div class="container">
+    {% for message in get_flashed_messages() %}
+        {{ message }}<br/>
+    {% endfor %}
+        <h1>You have to be authenticated to view this</h1>
+        <h1>Message Data</h1>
+        <table class="table table-dark table-striped table-hover table-responsive-md">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>E-mail</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%  for row in rows %}
+                    <tr>
+                        <td>{{ row['name'] }}</td>
+                        <td>{{ row['email'] }}</td>
+                        <td>{{ row['message'] }}</td>
+                    </tr>
+                {%  endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
