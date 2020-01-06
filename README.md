@@ -1,12 +1,16 @@
 # PersonalWebsite-Yilu-LIANG
 
-Description:
-Developed a personal website which displays self-introduction, personal experience and projects
-Applied Post/Redirect/Get design pattern
-Designed the general templates using Bootstrap and Html, built Server side using Flask, Python, worked on database using SQLite, added some style using CSS and JavaScript
-Handled forms using Flask-WTF, handled user sessions using Flask-Login and handled protected and unprotected pages using User Management
+<h3>Description:</h3>
+<ul>
+  <li>Developed a personal website which displays self-introduction, personal experience and projects</li>
+  <li>Applied Post/Redirect/Get design pattern</li>
+  <li>Designed the general templates using Bootstrap and Html, built Server side using Flask, Python, worked on database using SQLite, added some style using CSS and JavaScript</li>
+  <li>Handled forms using Flask-WTF, handled user sessions using Flask-Login and handled protected and unprotected pages using User Management</li>
+ </ul>
 
-Still Working on:
-Using Flask-Admin to handle admin username and password
-Adding more databases to data file
-Adding more animation and styles to decorate the website
+<h3>Still Working on:</h3>
+<ul>
+  <li>Using Flask-Admin to handle admin username and password</li>
+  <li>Adding more databases to data file</li>
+  <li>Adding more animation and styles to decorate the website</li>
+ </ul>
